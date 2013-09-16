@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.fju.weco.racetestgame" version="1.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="weco992" version="1.0">
 
 	<name>RaceGameTest</name>
 	<description>WECO 992 Race Game Test</description>
-	<author email="weco.fju@edu.tw">FJUWECO</author>	<gap:platforms>
+	<author>WECO</author>
+
+	<gap:platforms>
 		<gap:platform name="ios" />
 		<gap:platform name="android" />
 		<gap:platform name="webos" />
