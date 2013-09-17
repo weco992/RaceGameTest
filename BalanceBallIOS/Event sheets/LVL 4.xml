@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LVL 4</name>
+    <events>
+        <variable constant="0" name="IntendedScale5" sid="3784537934222576" static="0" type="number">1</variable>
+        <comment>By having an intended scale and gradually moving the actual layer scale towards that value, we can create a smooth zoom based on the car&apos;s speed.</comment>
+        <event-block sid="6193605835145771">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="4838343914984729" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="935534122882415" type="System">
+                    <param id="0" name="Variable">IntendedScale</param>
+                    <param id="1" name="Value">1.2 - Sprite.Car.Speed / 1000</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="6174880976798221" type="System">
+                    <param id="0" name="Layer">&quot;Background&quot;</param>
+                    <param id="1" name="Scale">lerp(LayerScale(&quot;Background&quot;), IntendedScale, 0.01)</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="1204895427738969" type="System">
+                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                    <param id="1" name="Scale">LayerScale(&quot;Background&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="1663930649426917" type="Timer">
+                    <param id="0" name="Text">time-Timer.StartTime</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7846087259172995">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="1434951883463173" type="Touch">
+                    <param id="0" name="Orientation">1</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Angle">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="1771846781636572" type="b">
+                    <param id="0" name="Instance variable">b</param>
+                    <param id="1" name="Value">Touch.Beta</param>
+                </action>
+                <action id="0" name="Set text" sid="5131869437442095" type="b">
+                    <param id="0" name="Text">b.b</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8414308580885079">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="8457542611145336" type="Touch">
+                    <param id="0" name="Orientation">2</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Angle">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="6909005543324479" type="g">
+                    <param id="0" name="Instance variable">g</param>
+                    <param id="1" name="Value">Touch.Gamma</param>
+                </action>
+                <action id="0" name="Set text" sid="8079742464292204" type="g">
+                    <param id="0" name="Text">g.g</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5134060884462091">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="3986358714740014" type="Touch">
+                    <param id="0" name="Orientation">1</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Angle">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="3" name="Accelerate" sid="7185586330147774" type="Sprite">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Acceleration">Touch.Beta*5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2234484944380281">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="5194602928801336" type="Touch">
+                    <param id="0" name="Orientation">1</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Angle">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="3" name="Accelerate" sid="7670952690732507" type="Sprite">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Acceleration">Touch.Beta*5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4752495690313668">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="7724634476002836" type="Touch">
+                    <param id="0" name="Orientation">2</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Angle">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="3" name="Accelerate" sid="5084897114581018" type="Sprite">
+                    <param id="0" name="Which">1</param>
+                    <param id="1" name="Acceleration">Touch.Gamma*5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7396710954079184">
+            <conditions>
+                <condition id="8" name="Compare orientation" sid="9962989059160443" type="Touch">
+                    <param id="0" name="Orientation">2</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Angle">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement" id="3" name="Accelerate" sid="4058310730565137" type="Sprite">
+                    <param id="0" name="Which">1</param>
+                    <param id="1" name="Acceleration">Touch.Gamma*5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5240978483388218">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8662323436559325" type="Sprite">
+                    <param id="0" name="Object">side</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5732333838446711" type="Sprite" />
+                <action id="-10" name="Set value" sid="7207537869545774" type="GG">
+                    <param id="0" name="Instance variable">GG</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="4128895746868265" type="System" />
+                <action id="-15" name="Set visible" sid="24602980079338" type="Timer">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9215172069075807">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9610935359286203" type="Sprite">
+                    <param id="0" name="Object">hit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6770108017850337" type="Sprite" />
+                <action id="-10" name="Set value" sid="1315167297431731" type="GG">
+                    <param id="0" name="Instance variable">GG</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9619972015566143" type="Timer">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="5751202507882559" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="8278961531219476">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5182991182232561" type="Sprite">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4231335963359174" type="Sprite" />
+                <action id="-10" name="Set value" sid="3510112146846002" type="GG">
+                    <param id="0" name="Instance variable">GG</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8172197997264328" type="Timer">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="4599611301436753" type="System" />
+                <action id="2" name="Set visible" sid="6204926525378681" type="GG">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="7653801052384079">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5198572885195422" type="Sprite">
+                    <param id="0" name="Object">StartLine</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="677266507511033" type="StartLine" />
+                <action id="-11" name="Add to" sid="7559894965294146" type="Timer">
+                    <param id="0" name="Instance variable">StartTime</param>
+                    <param id="1" name="Value">time</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9821447426476826" type="Timer">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="9826975425508315">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5660508634064583" type="Sprite">
+                    <param id="0" name="Object">checkpoint</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="661742172049957" type="checkpoint">
+                    <param id="0" name="Instance variable">check</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="574846584766303" type="FinishLine">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="736092617669758" type="checkpoint">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3250972668770179">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4234942469387595" type="Sprite">
+                    <param id="0" name="Object">FinishLine</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Append text" sid="7751535385547102" type="FinalTime">
+                    <param id="0" name="Text">time-timer.StartTime</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1940710904022964" type="FinalTime">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7478581242366671" type="Timer">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3741850035683689" type="FinishLine" />
+                <action behavior="CustomMovement" id="12" name="Set enabled" sid="5069945281802179" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7397180779832963" type="point">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="1" name="Append text" sid="3110933772007663" type="point">
+                    <param id="0" name="Text">point.point</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3611341596352848" type="star">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="2109545275987896" type="star">
+                    <param id="0" name="Animation">&quot;three&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="3" name="Start" sid="5271799380244148" type="star">
+                    <param id="0" name="From">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="309810665929543" type="GG">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="7845331629304279" type="menu">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="5991127643097603" type="NEXTLVL1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7033039707237048">
+            <conditions>
+                <condition id="0" name="On clicked" sid="2836391455595085" type="GG" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="572703837952382" type="System" />
+                <action id="2" name="Set visible" sid="3793825076568886" type="GG">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2581443263191963">
+            <conditions>
+                <condition id="0" name="On clicked" sid="5812345069111904" type="menu" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="17266111541108" type="System">
+                    <param id="0" name="Layout">start</param>
+                </action>
+                <action id="2" name="Set visible" sid="3708195652574636" type="GG">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2206662561161455">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1236514648755368" type="Sprite">
+                    <param id="0" name="Object">Sprite23</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="1691744333883945" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="9038083117448501">
+            <conditions>
+                <condition id="0" name="On clicked" sid="4128039186791366" type="NEXTLVL1" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5473515701671926" type="System">
+                    <param id="0" name="Layout">LVL 5</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>start</name>
+    <events>
+        <event-block sid="8702236770548307">
+            <conditions>
+                <condition id="0" name="On clicked" sid="1548626637144085" type="START" />
+            </conditions>
+            <actions>
+                <action id="2" name="Set visible" sid="8349110131282909" type="START">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7459372884910813" type="Sprite15">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="1251759191654412" type="LVL1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="5512380512711461" type="LVL2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="5498820765485044" type="LVL3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="5738284507118984" type="LVL4">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="2764310289994853" type="LVL5">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="1596563088045313" type="LVL6">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="4618218679187232" type="LVL7">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="5590830473188569" type="LVL8">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="7596349793179105" type="LVL9">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1638509493720541">
+            <conditions>
+                <condition id="0" name="On clicked" sid="1603778942840405" type="LVL1" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8776784204700854" type="System">
+                    <param id="0" name="Layout">LVL 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3424158342992077">
+            <conditions>
+                <condition id="0" name="On clicked" sid="9665238168961319" type="LVL2" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3226069971789938" type="System">
+                    <param id="0" name="Layout">LVL 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1894702933558617">
+            <conditions>
+                <condition id="0" name="On clicked" sid="2292515929685702" type="LVL3" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8014403926065959" type="System">
+                    <param id="0" name="Layout">LVL 3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5746972143518548">
+            <conditions>
+                <condition id="0" name="On clicked" sid="2451916885872318" type="LVL4" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3739549336462201" type="System">
+                    <param id="0" name="Layout">LVL 4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2919448422309078">
+            <conditions>
+                <condition id="0" name="On clicked" sid="377095739195599" type="LVL5" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5000830297055966" type="System">
+                    <param id="0" name="Layout">LVL 5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1733016041639192">
+            <conditions>
+                <condition id="0" name="On clicked" sid="8661022386874875" type="LVL6" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7612225038155536" type="System">
+                    <param id="0" name="Layout">LVL 6</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9120331413541852">
+            <conditions>
+                <condition id="0" name="On clicked" sid="113784095306209" type="LVL7" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6045541634845855" type="System">
+                    <param id="0" name="Layout">LVL 7</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="432375247496755">
+            <conditions>
+                <condition id="0" name="On clicked" sid="7218519462974238" type="LVL8" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8888824823543509" type="System">
+                    <param id="0" name="Layout">LVL 8</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8284690868096147">
+            <conditions>
+                <condition id="0" name="On clicked" sid="7603084287815068" type="LVL9" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8081015409063507" type="System">
+                    <param id="0" name="Layout">LVL 9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="86939038781116">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6394360366465101" type="System" />
+            </conditions>
+            <actions>
+                <action id="-8" name="Scroll to object" sid="1203073329858576" type="System">
+                    <param id="0" name="Object">Sprite15</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
