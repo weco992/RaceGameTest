@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1380592106
+#1382379421
 index.html
 c2runtime.js
 jquery-2.0.0.min.js
@@ -83,5 +83,11 @@ images\ig-sheet0.png
 images\sprite36-sheet0.png
 images\igtext-sheet0.png
 images\balltext-sheet0.png
+images\card-sheet0.png
+images\word-sheet0.png
+images\sprite37-sheet0.png
+images\math-sheet0.png
+images\ig2-sheet0.png
+images\cardgame-sheet0.png
 NETWORK:
 *
