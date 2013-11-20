@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="123" version="1.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="12313" version="1.0">
 
-	<name>RaceGameTest</name>
-	<description>WECO 992 Race Game Test</description>
-	<author>WECO</author>
+	<name>New project</name>
+	<description>1561655</description>
+	<author></author>
 
 	<gap:platforms>
 		<gap:platform name="ios" />
