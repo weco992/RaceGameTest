@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="12313" version="1.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.1" id="RGAME version="1.0">
 
-	<name>New project</name>
-	<description>1561655</description>
+	<name>RGAME</name>
+	<description>RGAME</description>
 	<author></author>
 
 	<gap:platforms>
